@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import icon1 from '../../statics/1.png';
+import icon2 from '../../statics/2.png';
+import icon3 from '../../statics/3.png';
+import icon4 from '../../statics/4.png';
+import QRCode from '../../statics/QRCode.png';
 
 export const HomeWrapper = styled.div`
     width: 960px;
@@ -37,9 +42,34 @@ export const BoardItem = styled.a`
     width: 100%;
     margin-bottom: 6px;
     cursor: pointer;
-    .board-img{
-        width: 280px;
-    } 
+`;
+
+export const BoardImg1 = styled.div`
+    width: 280px;
+    height: 50px;
+    background: url(${icon1});
+    background-size: contain;
+`;
+
+export const BoardImg2 = styled.div`
+    width: 280px;
+    height: 50px;
+    background: url(${icon2});
+    background-size: contain;
+`;
+
+export const BoardImg3 = styled.div`
+    width: 280px;
+    height: 50px;
+    background: url(${icon3});
+    background-size: contain;
+`;
+
+export const BoardImg4 = styled.div`
+    width: 280px;
+    height: 50px;
+    background: url(${icon4});
+    background-size: contain;
 `;
 
 export const CodeWrapper = styled.div`
@@ -48,10 +78,6 @@ export const CodeWrapper = styled.div`
     padding: 10px 22px;
     margin-bottom: 30px;
     cursor: pointer;
-    .code-img{
-        width: 60px;
-        vertical-align: middle;
-    }
 `;
 
 export const CodeInfo = styled.div`
@@ -101,6 +127,15 @@ export const CodeInfo = styled.div`
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
     }
+`;
+
+export const CodeImg = styled.div`
+        display: inline-block; 
+        width: 60px;
+        height: 60px;
+        vertical-align: middle;
+        background: url(${QRCode});
+        background-size: contain;
 `;
 
 export const ListItem = styled.div`

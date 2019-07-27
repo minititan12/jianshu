@@ -1,21 +1,21 @@
 import React, { PureComponent } from 'react';
-import { BoardWrapper, BoardItem } from '../style';
+import { BoardWrapper, BoardItem, BoardImg1, BoardImg2, BoardImg3, BoardImg4 } from '../style';
 
 class Board extends PureComponent {
     render() {
         return (
             <BoardWrapper>
                 <BoardItem>
-                    <img alt="board-img" className="board-img" src="//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"/>
+                    <BoardImg1 alt="board-img" className="board-img" />
                 </BoardItem>
                 <BoardItem>
-                    <img alt="board-img" className="board-img" src="//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"/>
+                    <BoardImg2 alt="board-img" className="board-img" />
                 </BoardItem>
                 <BoardItem>
-                    <img alt="board-img" className="board-img" src="//cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"/>
+                    <BoardImg3 alt="board-img" className="board-img" />
                 </BoardItem>
                 <BoardItem>
-                    <img alt="board-img" className="board-img" src="//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"/>
+                    <BoardImg4 alt="board-img" className="board-img" />
                 </BoardItem>
             </BoardWrapper>
         )

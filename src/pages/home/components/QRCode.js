@@ -1,19 +1,19 @@
 import React, { PureComponent } from 'react';
-import { CodeWrapper, CodeInfo } from '../style';
+import { CodeWrapper, CodeInfo, CodeImg } from '../style';
 import { connect } from 'react-redux';
-import { getAction } from '../store'
+import { getAction } from '../store';
 
 class QRCode extends PureComponent {
 
-    showCode(){
-        if(this.props.codeMouseIn){
+    showCode() {
+        if (this.props.codeMouseIn) {
             return (
                 <div className="code">
-                    <img alt="code-img" className="code-img" src="//cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png"/>
+                    <CodeImg className="code-img"/>
                     <div className="sharp"></div>
                 </div>
             )
-        }else{
+        } else {
             return null;
         }
     }
@@ -25,7 +25,7 @@ class QRCode extends PureComponent {
                 onMouseEnter={handleCodeMouseEnter}
                 onMouseLeave={handleCodeMouseLeave}
             >
-                <img alt="code-img" className="code-img" src="//cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png" />
+                <CodeImg className="code-img" />
                 <CodeInfo>
                     <div className="title">
                         下载简书手机App
